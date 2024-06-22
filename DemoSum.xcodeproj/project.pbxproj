@@ -11,6 +11,9 @@
 		A44801F02C26499700ADF11F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44801EF2C26499700ADF11F /* ContentView.swift */; };
 		A44801F22C26499800ADF11F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A44801F12C26499800ADF11F /* Assets.xcassets */; };
 		A44801F52C26499800ADF11F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A44801F42C26499800ADF11F /* Preview Assets.xcassets */; };
+		A44801FE2C2649C800ADF11F /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A44801FD2C2649C800ADF11F /* Metal.framework */; };
+		A44802002C2649EF00ADF11F /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = A44801FF2C2649EF00ADF11F /* Shaders.metal */; };
+		A44802022C264A6B00ADF11F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44802012C264A6B00ADF11F /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		A44801F12C26499800ADF11F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A44801F42C26499800ADF11F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A44801F62C26499800ADF11F /* DemoSum.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DemoSum.entitlements; sourceTree = "<group>"; };
+		A44801FD2C2649C800ADF11F /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		A44801FF2C2649EF00ADF11F /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		A44802012C264A6B00ADF11F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A44801FE2C2649C800ADF11F /* Metal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +45,7 @@
 			children = (
 				A44801EC2C26499700ADF11F /* DemoSum */,
 				A44801EB2C26499700ADF11F /* Products */,
+				A44801FC2C2649C800ADF11F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +65,8 @@
 				A44801F12C26499800ADF11F /* Assets.xcassets */,
 				A44801F62C26499800ADF11F /* DemoSum.entitlements */,
 				A44801F32C26499800ADF11F /* Preview Content */,
+				A44801FF2C2649EF00ADF11F /* Shaders.metal */,
+				A44802012C264A6B00ADF11F /* ViewController.swift */,
 			);
 			path = DemoSum;
 			sourceTree = "<group>";
@@ -67,6 +77,14 @@
 				A44801F42C26499800ADF11F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A44801FC2C2649C800ADF11F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A44801FD2C2649C800ADF11F /* Metal.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +157,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A44802002C2649EF00ADF11F /* Shaders.metal in Sources */,
 				A44801F02C26499700ADF11F /* ContentView.swift in Sources */,
+				A44802022C264A6B00ADF11F /* ViewController.swift in Sources */,
 				A44801EE2C26499700ADF11F /* DemoSumApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
